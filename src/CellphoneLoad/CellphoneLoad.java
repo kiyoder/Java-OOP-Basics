@@ -1,4 +1,6 @@
-class CellphoneLoad {
+package CellphoneLoad;
+
+public class CellphoneLoad {
     private boolean hasUnlimitedCalls;
     private boolean hasUnlimitedTexts;
     private int internetMB;
@@ -14,7 +16,7 @@ class CellphoneLoad {
     }
 
     public boolean hasUnlimitedTexts() {
-        return hasUnlimitedCalls;
+        return hasUnlimitedTexts;
     }
 
     public int internetMB() {

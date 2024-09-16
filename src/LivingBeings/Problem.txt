@@ -1,0 +1,48 @@
+Living Beings - Java
+by CodeChum Admin
+
+Different kinds of living beings have some similar behavior.
+For example, all kinds of living beings, whether it be an elephant or
+ a bacteria eat. In this program, we will be implementing some living
+ beings and some of their common behavior. We will be enforcing this
+ using interfaces.
+
+
+
+Interface - LivingBeing:
+
+Methods:
+public void eat(): Simulates the action of eating.
+public void grow(): Simulates the action of growing.
+public void grow(int n): Simulates repeated growth actions, based on the provided integer n.
+
+
+Class - Human (implements LivingBeing):
+
+Constructor:
+public Human(): Initializes a Human object.
+Implemented Methods:
+public void eat(): Prints "Human is eating".
+public void grow(): Prints "Human is growing".
+public void grow(int n): Repeatedly prints "Human is growing", n times.
+
+
+Class - Animal (implements LivingBeing):
+
+Constructor:
+public Animal(): Initializes an Animal object.
+Implemented Methods:
+public void eat(): Prints "Animal is eating".
+public void grow(): Prints "Animal is growing".
+public void grow(int n): Repeatedly prints "Animal is growing", n times.
+
+
+Class - Dog (extends Animal):
+
+Constructor:
+public Dog(): Initializes a Dog object.
+Additional Method:
+public void bark(): Prints "Woof".
+
+
+Note: The test cases are not outputs of your main file but of a hidden test file. Create and implement the classes instructed to test your code.

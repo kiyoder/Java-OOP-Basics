@@ -1,4 +1,6 @@
-class Phone{
+package CellphoneLoad;
+
+public class Phone{
     private boolean hasUnlimitedCalls;
     private boolean hasUnlimitedTexts;
     private int internetMB;
