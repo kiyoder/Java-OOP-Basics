@@ -1,0 +1,22 @@
+In this task, you are required to implement a digital library system, focusing on the interface for e-book reader functionalities.
+
+
+
+Interface - EBookReader:
+
+Methods:
+void openBook(String bookTitle): Opens a book with the specified title.
+void closeBook(): Closes the currently open book.
+void turnPageForward(): Turns to the next page in the book.
+void turnPageBackward(): Goes back to the previous page in the book.
+
+
+Class - BasicEBookReader (implements EBookReader):
+
+Private Property:
+private String currentBook: The title of the currently open book, initially null.
+Implemented Methods:
+public void openBook(String bookTitle): Sets currentBook to bookTitle and prints "Opening the book: bookTitle."
+public void closeBook(): Checks if a book is open. If yes, prints "Closing the current book." and sets currentBook to null. If no book is open, prints "No book is currently open."
+public void turnPageForward(): Checks if a book is open. If yes, prints "Turning to the next page." If no book is open, prints "No book is currently open."
+public void turnPageBackward(): Checks if a book is open. If yes, prints "Going back to the previous page." If no book is open, prints "No book is currently open."
