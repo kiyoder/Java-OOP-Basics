@@ -6,7 +6,7 @@ public class ShapeFactory {
 
     public Shape ceateShape(){
         Scanner sc = new Scanner(System.in);
-        System.out.println("Choose a shape (1 for Cylinder, 2 for Sphere, 3 for Cone):");
+        System.out.print("Choose a shape (1 for Cylinder, 2 for Sphere, 3 for Cone): ");
         int choice = sc.nextInt();
 
         double radius = 0;
@@ -14,19 +14,19 @@ public class ShapeFactory {
 
         switch(choice){
             case 1:
-                System.out.println("Enter the radius of the Cylinder: ");
+                System.out.print("Enter the radius of the Cylinder: ");
                 radius = sc.nextDouble();
-                System.out.println("Enter the height of the Cylinder: ");
+                System.out.print("Enter the height of the Cylinder: ");
                 height = sc.nextDouble();
                 return new Cylinder(radius, height);
             case 2:
-                System.out.println("Enter the radius of the Sphere: ");
+                System.out.print("Enter the radius of the Sphere: ");
                 radius = sc.nextDouble();
                 return new Sphere(radius);
             case 3:
-                System.out.println("Enter the radius of the Cone: ");
+                System.out.print("Enter the radius of the Cone: ");
                 radius = sc.nextDouble();
-                System.out.println("Enter the height of the Cone: ");
+                System.out.print("Enter the height of the Cone: ");
                 height = sc.nextDouble();
                 return new Cone(radius, height);
 
